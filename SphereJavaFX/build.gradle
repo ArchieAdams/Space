@@ -1,0 +1,37 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+}
+
+// Use Java version 15.
+sourceCompatibility = 15
+targetCompatibility = 15
+
+// Set project info.
+version = '0.0.1'
+group = 'spherejavafx'
+mainClassName = "${group}.Space"
+
+// Use JavaFX version 15, with javafx controls module.
+javafx {
+    version = "15"
+    modules = [ 'javafx.controls' ]
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        name 'Harley O\'Connor Maven'
+        url 'http://harleyoconnor.com/maven/'
+    }
+}
+
+dependencies {
+    // Gives access to javax.annotation.Nullable.
+    implementation group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.2'
+    implementation group: 'com.harleyoconnor.javautilities', name: 'JavaUtilities', version: '0.0.4'
+
+    // Allows for testing classes.
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}

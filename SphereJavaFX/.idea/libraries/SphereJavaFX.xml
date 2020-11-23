@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="SphereJavaFX">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/SphereJavaFX.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
