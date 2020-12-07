@@ -3,7 +3,7 @@ package spherejavafx;
 public enum CelestialBody {
     SUN(75,0,0,"sun",false, 0, 0, 0),
     EARTH(30,250,0,"earth",true, 0, 0, 0),
-    MOON(30,275,275,"moon",true, 0, 250, 0);
+    MOON(7.5,300,0,"moon",true, 0, 250, 0);
 
     private final double radius;
     private final double distanceFromXCenter;
